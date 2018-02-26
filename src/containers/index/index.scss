@@ -1,0 +1,81 @@
+@import '../../css/variable.scss';
+
+.index {
+    .status {
+        > div{
+            padding: 0 20px 10px 0;
+        }
+        > div:last-child {
+            padding-right: 0;
+        }
+        .icon {
+            text-align: center;
+            line-height: 88px;
+            border-bottom-left-radius: $radius;
+            border-top-left-radius: $radius;
+        }
+        .text {
+            text-align: center;
+            color: #c6cad6;
+            background: $btn_blue;
+            height: 88px;
+            padding: 15px 0; 
+            background: $white;
+            font-size: 14px;
+            border-bottom-right-radius: $radius;
+            border-top-right-radius: $radius;
+            div:first-child {
+                font-size: 30px;
+                line-height: 32px;
+            }
+        }
+    }
+    .cntCenter {
+        color: #142130;
+        > div {
+            height: 400px;
+            padding: 10px 20px 10px 0;
+            h2 {
+                font-size: 18px;
+            }
+            > div {
+                background: $white;
+                border-radius: $radius;
+                height: 100%;
+            }
+        }
+        > div:last-child {
+            padding-right: 0;
+        }
+        .dynamic {
+            > div {
+                padding: 15px 0;
+                .dynamicTit {
+                    padding: 0 15px;
+                    font-size: 18px;
+                }
+                .dynamicItem {
+                    color: #3f3f3f;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    padding: 2px 15px;
+                    
+                }
+                .dynamicItem:hover {
+                    background: $lightGray;
+                }
+            }
+        }
+    }
+    .remindMsg {
+        color: #142130;
+        padding: 15px;
+        background: $white;
+        margin-top: 10px;
+        h2 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+}

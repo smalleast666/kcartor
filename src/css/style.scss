@@ -1,0 +1,144 @@
+@import "./base.scss", "./variable.scss";
+
+html, body {
+    max-width: 1920px;
+}
+.loading {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.content-block {
+    display: flex;
+    justify-content: space-between;
+    .content {
+        width: calc(100vw - 210px);
+        height: calc(100vh - 46px);
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 15px;
+        background: #f7f7f7;
+        .content-div {
+            background: #fff;
+            height: 100%;
+            padding: 25px 20px;
+            box-sizing: border-box;
+            overflow: auto;
+            .search {
+                padding: 20px 0 30px;
+            }
+            // 添加按钮
+            .add_icon {
+                cursor: pointer;
+                width: 32px;
+                height: 32px;
+                border-radius: 3px;
+                padding: 2px;
+                background: $btn_blue;
+            }
+            // 列表样式
+            .listTable {
+                font-size: 14px;
+                border: solid 1px #f3f3f3;
+                border-bottom: none;
+                > div {
+                    display: flex;
+                    justify-content: space-around;
+                    text-align: center;
+                    border-bottom: 1px solid #f3f3f3;
+                    transition: .3s;
+                    > div {
+                        padding: 8px 0;
+                        border-right: solid 1px #f3f3f3;
+                    }
+                    > div:last-child {
+                        border-right: none;
+                    }
+                }
+                > div:nth-child(even) {
+                    background: #fafafa;
+                }
+                > div:hover {
+                    background: #f3f3f3
+                }
+                .operation {
+                    span {
+                        padding: 2px 10px;
+                        margin:  0 5px;
+                        cursor: pointer;
+                        border-radius: 12px;
+                    }
+                    .blue {
+                        color: $btn_blue;
+                    }
+                    .green {
+                        color: $btn_green;
+                    }
+                    .red {
+                        color: $btn_red;
+                    }
+                    .blue:hover {
+                        background: $btn_blue;
+                        color: $white;
+                    }
+
+                    .green:hover {
+                        background: $btn_green;
+                        color: $white;
+                    }
+
+                    .red:hover {
+                        background: $btn_red;
+                        color: $white;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+
+// 屏幕宽度小于768 菜单隐藏
+@media screen and (max-width: 768px) {
+    .content-block {
+        .content {
+            width: 100%;
+        }
+    }
+    .left-nav {
+        margin-left: -100%;
+    }
+}
+
+// 隐藏滚动条
+// .left-nav::-webkit-scrollbar {
+//     display: none;
+// }
+/*默认滚动条样式*/
+
+//滚动条样式
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    // border: 1px #d3d3d3 solid;
+    border: none;
+    box-shadow: 0px 0px 3px #dfdfdf inset;
+    border-radius: 10px;
+    background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 1px $btn_blue solid;
+    border-radius: 10px;
+    // background: #999;
+    background: #40a9ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $btn_blue;
+}

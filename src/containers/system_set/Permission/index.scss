@@ -1,0 +1,82 @@
+@import '../../../css/variable.scss';
+
+
+.permission {
+    // list
+    .permissionTable {
+        font-size: 14px;
+        border: solid 1px #f3f3f3;
+        border-bottom: none;
+        .tableTitle {
+            padding: 8px 0;
+            div {
+                padding-left: 10em;
+            }
+            
+        }
+        .table-list {
+            border-bottom: 1px solid #f3f3f3;
+            border-top: 1px solid #f3f3f3;
+            cursor: pointer;
+            > div {
+                padding: 8px 0;
+                padding-left: 10em;
+            }
+            > div:first-child {
+                padding-left: 8.7em;
+            }
+            
+        }
+        .table-list:hover {
+            background: #f7f7f7;
+        }
+        .child-item {
+            background: #fafafa;
+            transition: .6s;
+            overflow: hidden;
+            max-height: 0;
+            > div {
+                border-bottom: #f3f3f3 solid 1px;
+                padding: 5px 0;
+                div {
+                    padding-left: 10em;
+                }
+            }
+            > div:hover {
+                background: #f3f3f3
+            }
+            
+        }
+        
+        .operation {
+            span {
+                padding: 2px 10px;
+                margin: 0 5px;
+                cursor: pointer;
+                border-radius: 12px;
+            }
+            .blue {
+                color: $btn_blue;
+            }
+            .green {
+                color: $btn_green;
+            }
+            .red {
+                color: $btn_red;
+            }
+            .blue:hover {
+                background: $btn_blue;
+                color: $white;
+            }
+            .green:hover {
+                background: $btn_green;
+                color: $white;
+            }
+            .red:hover {
+                background: $btn_red;
+                color: $white;
+            }
+        }
+    }
+
+}

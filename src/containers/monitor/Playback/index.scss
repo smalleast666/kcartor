@@ -1,0 +1,8 @@
+@import '../../../css/variable.scss';
+
+.PlayBlock {
+    height: 100%;
+    .map {
+        height: calc(100% - 102px);
+    }
+}

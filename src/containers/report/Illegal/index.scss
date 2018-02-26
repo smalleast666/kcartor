@@ -1,0 +1,18 @@
+@import '../../../css/variable.scss';
+
+.illegal {
+    .chart {
+        > div {
+            padding: 15px;
+            .chartTitle {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 15px;
+                padding-left: 5px;
+                h2 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

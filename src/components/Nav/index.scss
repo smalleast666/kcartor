@@ -1,0 +1,94 @@
+
+@import '../../css/variable.scss';
+
+.left-nav {
+    width: $nav_left;
+    height: calc(100vh - 46px);
+    box-sizing: border-box;
+    padding: 16px 10px;
+    background: #142130;
+    overflow: auto;
+    transition: .3s;
+    .navItem:first-child {
+        color: $btn_blue;
+        margin-bottom: 5px;
+        background: #222e3c;
+    }
+    
+    .navItem {
+        color: #eee;
+        padding: 15px;
+        border-radius: 4px;
+        div {
+            display: flex;
+            justify-content: space-between;
+            transition: .6s;
+            cursor: pointer;
+            font-size: 16px;
+            .openClose {
+                position: relative;
+                right: 15px;
+                span {
+                    display: block;
+                    width: 12px;
+                    height: 1px;
+                    background: $btn_blue;
+                    position: absolute;
+                    top: 10px;
+                    transition: .6s;
+                }
+                span:last-child {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        ul{
+            max-height: 0;
+            overflow: hidden;
+            transition: .6s;
+            cursor: pointer;
+            li {
+                padding: 0 16px;
+                margin: 8px 0;
+                transition: .6s;
+                height: 16px;
+                line-height: 14px;
+                border-left: 2px solid transparent;
+                a {
+                    color: #eee;
+                    font-size: 14px;
+                    transition: .6s;
+                }
+            }
+            li:hover, .item-on {
+                border-left: 2px solid $btn_blue;
+                a {
+                    color: $btn_blue;
+                }
+                
+            }
+            
+        }
+        
+    }
+    .active {
+        background: #222e3c;
+        > div {
+            color: $btn_blue;
+            span {
+                background: $btn_blue;
+            }
+            span:last-child {
+                width: 0;
+            }
+        }
+
+        ul {
+            padding: 16px 0;
+            padding-bottom: 0px;
+            max-height: 200px;
+        }
+        
+    }
+    
+}

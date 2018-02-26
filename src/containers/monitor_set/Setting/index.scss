@@ -1,0 +1,52 @@
+
+
+@import '../../../css/variable.scss';
+.setting {
+    .title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    
+    .lbs {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 111;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        .lbs_titie {
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            i:first-child {
+                margin-right: 5px;
+            }
+            i {
+                font-size: 22px;
+                font-weight: bold;
+                vertical-align: -2px;
+            }
+        }
+        
+        .GPS_cnt {
+            width: 100%;
+            height: calc(100% - 47px);
+            position: relative;
+            .lbs_form {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 280px;
+                padding: 15px;
+                background: rgba(255, 255, 255, .9);
+                > * {
+                    margin-bottom: 15px;
+                }
+            } 
+        }
+    }
+    
+}

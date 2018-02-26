@@ -1,0 +1,19 @@
+@import '../../../css/variable.scss';
+
+.role {
+    .title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    .listTable {
+        > div {
+            > div {
+                border-right: 1px solid #f3f3f3;
+            }
+            > div:last-child {
+                border-right: none;
+            }
+        }
+    }
+}

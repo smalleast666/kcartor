@@ -1,0 +1,51 @@
+@import '../../../css/variable.scss';
+
+.GPS {
+    .GPSState {
+        padding: 15px 0;
+        .color {
+            display: inline-block;
+            width: 20px;
+            height: 13px;
+            margin: 0 5px;
+            vertical-align: -2px
+        }
+    }
+    .GPS_cnt {
+        height: 100%;
+        .GPSMap {
+            height: 785px;
+            .amap-icon {
+                img {
+                    width: 15px;
+                }
+            }
+        }
+        .car_list {
+            height: 100%;
+            .clearfix {
+                padding-bottom: 5px;
+            }
+            .car-item {
+                padding: 0 10px;
+                font-size: 14px;
+                transform: .6s;
+                cursor: pointer;
+                img {
+                    width: 10px;
+                    height: 18px;
+                    margin-right: 5px;
+                    vertical-align: -4px;
+                }
+            }
+            .car-item:hover {
+                color: $btn_blue;
+            }
+            ul {
+                padding-top: 10px;
+            }
+        }
+    }
+    
+    
+}
