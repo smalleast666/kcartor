@@ -29,4 +29,5 @@ devtool: shouldUseSourceMap ? 'source-map' : false, //开启后会打包开发�
 server //server
 src //client
 
+## vscode 插件 github token 
 40d6d0c5da48fe6bd4bc4a7515012e7ea40746b0
